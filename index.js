@@ -17,6 +17,7 @@ const Port=process.env.Port
 app.use(router)
 
 server.listen(Port,()=>{
+    console.log(process.env.MONGO_DB_URI,"index")
     connectToMongoDB()
     console.log("server listening on port "+Port)
 });
