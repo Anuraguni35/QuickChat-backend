@@ -12,7 +12,7 @@ app.use(cors());
 dotenv.config();
 
 
-const Port=process.env.Port
+const Port=process.env.Port||4000;
  app.use(express.json());
 app.use(router)
 
