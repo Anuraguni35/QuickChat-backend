@@ -5,6 +5,8 @@ import messagesRoutes from "../routes/message.routes.js"
 import userRouter from "../routes/user.routes.js"
 const router=express.Router();
 
+
+
 router.get('/',(req,res)=>{
     res.send('Welcome to the server');
 })
