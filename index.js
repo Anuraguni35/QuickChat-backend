@@ -16,13 +16,13 @@ const Port = process.env.Port || 4000;
 app.use(express.json());
 app.use(router);
 
-const MONGO_URL = process.env.Mongo_Db_URI;
-server.listen(Port, () => {
-  mongoose
-    .connect(MONGO_URL)
-    .then(() => {
-      console.log("MONGO DB connected successfully.");
-      console.log("server listening on port " + Port);
-    })
-    .catch((err) => console.error("ERROR connecting MONGODB =>", err.message));
-});
+// const MONGO_URL = process.env.Mongo_Db_URI;
+// server.listen(Port, () => {
+//   mongoose
+//     .connect(MONGO_URL)
+//     .then(() => {
+//       console.log("MONGO DB connected successfully.");
+//       console.log("server listening on port " + Port);
+//     })
+//     .catch((err) => console.error("ERROR connecting MONGODB =>", err.message));
+// });
