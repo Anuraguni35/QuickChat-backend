@@ -16,11 +16,12 @@ const Port = process.env.Port || 4000;
 app.use(express.json());
 app.use(router);
 
-const MONGO_URL = 'mongodb+srv://anuraguniyal35:Power35@cluster0.seei6yz.mongodb.net/';
+const MONGO_URL = "mongodb+srv://anuraguniyal35:Power35@cluster0.seei6yz.mongodb.net/qkart";
 server.listen(Port, () => {
   mongoose
     .connect(MONGO_URL)
     .then(() => {
+      console.log(MONGO_URL);
       console.log("MONGO DB connected successfully.");
       console.log("server listening on port " + Port);
     })
