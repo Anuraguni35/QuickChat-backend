@@ -16,7 +16,7 @@ const Port = process.env.Port || 4000;
 app.use(express.json());
 app.use(router);
 
-const MONGO_URL = "mongodb+srv://anuraguniyal35:Power35@cluster0.seei6yz.mongodb.net/qkart";
+const MONGO_URL = process.env.MONGO_URL ;
 server.listen(Port, () => {
   mongoose
     .connect(MONGO_URL)
